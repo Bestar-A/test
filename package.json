@@ -1,0 +1,15 @@
+{
+	"name": "panel-1",
+	"version": "1.0.0",
+	"description": "just use for sass compile to make custom bootstrap",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch --no-source-map ./assets/scss:./assets/css"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bootstrap": "^5.3.3",
+		"sass": "^1.79.4"
+	}
+}

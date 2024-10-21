@@ -1,0 +1,46 @@
+// Fonts
+@font-face {
+	font-family: RedRose;
+	src: url("../fonts/RedRose-VariableFont_wght.ttf");
+}
+
+* {
+	font-family: RedRose, sans-serif;
+}
+
+// Colors
+$primary: #ff6060;
+$secondary: #f8f5f0;
+
+$light: #656565;
+$info: #4ccfff;
+$success: #d5fd92;
+$danger: #ff4c5e;
+
+// Typography
+$headings-margin-bottom: 0;
+
+// Padding & Margin & Gap
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.75,
+	2: $spacer,
+	3: $spacer * 1.25,
+	4: $spacer * 1.5,
+	5: $spacer * 1.875,
+	6: $spacer * 3.375,
+	s: $spacer * 0.5,
+	m: 40px,
+	l: 70px,
+	x: 80px,
+	xx: 110px,
+);
+
+// Buttons
+
+$form-select-indicator-color: transparent;
+
+$modal-md: 632px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

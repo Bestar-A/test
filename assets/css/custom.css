@@ -1,0 +1,16 @@
+button {
+	background-color: transparent;
+	border: none;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
