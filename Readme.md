@@ -1,4 +1,4 @@
-# Panel Design 1
+# Panel Design 3
 
 From scratch using SASS, Bootstrap, JS
 
