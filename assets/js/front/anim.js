@@ -1,6 +1,8 @@
+const $ = (elem) => document.querySelectorAll(elem);
+
 const scrollAnimation = () => {
 	document.addEventListener("DOMContentLoaded", () => {
-		const animScrollOpacities = document.querySelectorAll(".anim-trigger-scroll");
+		const animScrollOpacities = $(".anim-trigger-scroll");
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -20,7 +22,7 @@ const scrollAnimation = () => {
 };
 
 const sliderAnimation = () => {
-	const sliderLists = document.querySelectorAll(".slide-list");
+	const sliderLists = $(".slide-list");
 	let curSlider = 0;
 
 	const slider = () => {
@@ -34,7 +36,6 @@ const sliderAnimation = () => {
 			}
 			curSlider = (curSlider + 1) % (sliderList.children.length - 1);
 		}
-		console.log(curSlider);
 
 		setTimeout(slider, 5000);
 	};
@@ -42,5 +43,50 @@ const sliderAnimation = () => {
 	document.addEventListener("DOMContentLoaded", slider);
 };
 
+const testimonialAnimation = () => {
+	const testimonialContents = $(".testimonial-content");
+	const testimonialButtons = $(".btn-testimonial");
+	let curTestimonial = -1;
+	let testimonialTimer = null;
+
+	const updateUI = () => {
+		for (let i = 0; i < testimonialButtons.length; i++) {
+			if (i == curTestimonial) {
+				testimonialButtons[i].classList.add("active");
+				testimonialContents[i].style.display = "block";
+				setTimeout(() => {
+					testimonialContents[i].style.opacity = "1";
+					testimonialContents[i].style.transform = "translateY(0px)";
+				}, 50);
+			} else {
+				testimonialButtons[i].classList.remove("active");
+				testimonialContents[i].style.display = "none";
+				testimonialContents[i].style.opacity = "0";
+				testimonialContents[i].style.transform = "translateY(20px)";
+			}
+		}
+	};
+
+	testimonialButtons.forEach((i, k) => {
+		i.addEventListener("click", () => {
+			curTestimonial = k;
+			updateUI();
+			clearTimeout(testimonialTimer);
+			testimonialTimer = setTimeout(testimonial, 3000);
+		});
+	});
+
+	console.log(testimonialButtons.length);
+
+	const testimonial = () => {
+		curTestimonial = (curTestimonial + 1) % testimonialButtons.length;
+		updateUI();
+		testimonialTimer = setTimeout(testimonial, 3000);
+	};
+
+	document.addEventListener("DOMContentLoaded", testimonial);
+};
+
+testimonialAnimation();
 sliderAnimation();
 scrollAnimation();

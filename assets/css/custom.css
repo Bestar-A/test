@@ -77,6 +77,10 @@ button {
 	font-size: 12px;
 }
 
+.testimonial-subtitle {
+	font-size: 12px;
+}
+
 .service-card-wrapper {
 	padding: 0 1rem;
 	position: relative;
@@ -130,6 +134,26 @@ button {
 
 .slide-list {
 	transition: all 0.8s ease-in-out;
+}
+
+.btn-testimonial {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #dadada;
+	transition: all 0.4s ease-in-out;
+}
+
+.btn-testimonial.active {
+	width: 40px;
+	background-color: #ff6060;
+}
+
+.testimonial-content {
+	transition: all 0.5s ease-in-out;
+}
+
+.testimonial-btn {
 }
 
 @media (min-width: 576px) {
@@ -247,6 +271,10 @@ button {
 
 	.service-card {
 		width: 50%;
+	}
+
+	.testimonial-subtitle {
+		font-size: 14px;
 	}
 }
 

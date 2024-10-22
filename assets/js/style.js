@@ -13,7 +13,6 @@ function szChild() {
 			const parentHeight = parseFloat(window.getComputedStyle(szChildWrapper).height);
 			const parentPadding = parseFloat(window.getComputedStyle(szChildWrapper).paddingTop) + parseFloat(window.getComputedStyle(szChildWrapper).paddingBottom);
 			const childHeight = parseFloat(window.getComputedStyle(childElem).height);
-			console.log(parentHeight, parentPadding, childHeight);
 			if (childHeight + parentPadding > parentHeight) szChildWrapper.style.height = childHeight + parentPadding + "px";
 		}
 	}
