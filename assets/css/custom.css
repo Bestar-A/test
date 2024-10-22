@@ -15,6 +15,27 @@ button {
 	box-shadow: none;
 }
 
+.form-icon-group {
+	position: relative;
+}
+
+.form-icon-group .form-control {
+	padding-left: 3rem;
+}
+
+.form-icon-group .form-start-icon {
+	position: absolute;
+	top: 50%;
+	left: 2.5rem;
+	transform: translate(-50%, -50%);
+	border-radius: 0.5rem;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .main-title {
 	font-size: 30px;
 	font-weight: bolder;
@@ -26,6 +47,19 @@ button {
 	font-weight: 900;
 }
 
+.login-dlg {
+	padding: 18px 24px 10px;
+	margin: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1332px;
+	font-size: 12px;
+}
+
+.login-dlg input {
+	font-size: 12px;
+}
+
 @media (min-width: 576px) {
 	.main-title {
 		font-size: 36px;
@@ -33,6 +67,17 @@ button {
 
 	.main-subtitle {
 		font-size: 12px;
+	}
+
+	.login-dlg input {
+		font-size: 16px;
+	}
+
+	.login-dlg {
+		padding: 20px 40px 20px;
+		margin: 0px 50px;
+		flex-direction: column;
+		font-size: 16px;
 	}
 }
 
@@ -43,6 +88,16 @@ button {
 	.main-subtitle {
 		font-size: 14px;
 	}
+	.login-dlg {
+		padding: 28px 54px 24px;
+		margin: 0px 110px;
+		flex-direction: column;
+		font-size: 18px;
+	}
+
+	.login-dlg input {
+		font-size: 18px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -52,16 +107,25 @@ button {
 	.main-subtitle {
 		font-size: 18px;
 	}
+	.login-dlg {
+		padding: 32px 50px 28px;
+		margin: 0px 100px;
+		flex-direction: row;
+	}
 }
 
 @media (min-width: 1200px) {
-	/* .main-title {
-		font-size: 60px;
-	} */
+	.login-dlg {
+		padding: 32px 50px 28px;
+		margin: 0px 120px;
+		flex-direction: row;
+	}
 }
 
 @media (min-width: 1400px) {
-	/* .main-title {
-		font-size: 72px;
-	} */
+	.login-dlg {
+		padding: 32px 50px 28px;
+		margin: 0px auto;
+		flex-direction: row;
+	}
 }
