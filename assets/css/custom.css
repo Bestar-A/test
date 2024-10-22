@@ -3,6 +3,12 @@ button {
 	border: none;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bolder;
+}
+
 .cursor-pointer {
 	cursor: pointer;
 }
@@ -100,13 +106,11 @@ button {
 .service-card-wrapper::after {
 	right: 0;
 	background-color: #ff6060;
-	/* background-image: linear-gradient(to left, #ff6060, #ff6060); */
 }
 
 .service-card-wrapper::before {
 	left: 0;
 	background-color: #ff6060;
-	/* background-image: linear-gradient(to right, #ff6060, #ff6060); */
 }
 
 .service-card-image {
@@ -153,7 +157,38 @@ button {
 	transition: all 0.5s ease-in-out;
 }
 
-.testimonial-btn {
+.accordion-head {
+	background-color: transparent;
+}
+
+.accordion-head h5 {
+	font-size: 14px;
+}
+
+.accordion-head.active {
+	color: white;
+}
+
+.accordion-body {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.4s ease-in-out;
+	color: white;
+	font-weight: 600;
+}
+
+.accordion-content {
+	padding: 0.4rem;
+	line-height: 1.5rem;
+	font-size: 12px;
+}
+
+.accordion-close {
+	transition: transform 0.4s ease-in-out;
+}
+
+.active .accordion-close {
+	transform: rotate(45deg);
 }
 
 @media (min-width: 576px) {
@@ -234,7 +269,14 @@ button {
 		padding: 2rem;
 	}
 
-	.service-card h6 {
+	.service-card h6,
+	.accordion-head h5 {
+		font-size: 14px;
+	}
+
+	.accordion-content {
+		padding: 0.5rem 0.5rem 0.2rem;
+		line-height: 1.5rem;
 		font-size: 14px;
 	}
 }
@@ -265,7 +307,8 @@ button {
 		font-size: 20px;
 	}
 
-	.service-card h6 {
+	.service-card h6,
+	.accordion-head h5 {
 		font-size: 16px;
 	}
 
@@ -275,6 +318,12 @@ button {
 
 	.testimonial-subtitle {
 		font-size: 14px;
+	}
+
+	.accordion-content {
+		padding: 0.5rem 0.5rem 0.2rem;
+		line-height: 1.5rem;
+		font-size: 16px;
 	}
 }
 
@@ -304,6 +353,16 @@ button {
 		padding: 32px 50px 28px;
 		margin: 0px 134px;
 		flex-direction: row;
+	}
+
+	.accordion-head h5 {
+		font-size: 20px;
+	}
+
+	.accordion-content {
+		padding: 0.7rem 0.6rem 0.2rem;
+		line-height: 1.5rem;
+		font-size: 18px;
 	}
 }
 

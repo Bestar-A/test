@@ -87,6 +87,29 @@ const testimonialAnimation = () => {
 	document.addEventListener("DOMContentLoaded", testimonial);
 };
 
+const faqAnimation = () => {
+	document.addEventListener("DOMContentLoaded", function () {
+		const accordionHeads = document.querySelectorAll(".accordion-head");
+
+		accordionHeads.forEach((head) => {
+			head.addEventListener("click", function () {
+				const accordionBody = head.nextElementSibling;
+				head.classList.toggle("active");
+				if (head.classList.contains("active")) {
+					accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+					head.parentElement.classList.remove("bg-white");
+					head.parentElement.classList.add("bg-primary");
+				} else {
+					accordionBody.style.maxHeight = 0;
+					head.parentElement.classList.remove("bg-primary");
+					head.parentElement.classList.add("bg-white");
+				}
+			});
+		});
+	});
+};
+
+faqAnimation();
 testimonialAnimation();
 sliderAnimation();
 scrollAnimation();
