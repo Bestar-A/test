@@ -52,6 +52,22 @@
 	transform: translateY(0px);
 }
 
+.anim-right {
+	transform: translateX(-30px);
+}
+
+.anim-right.anim-active {
+	transform: translateX(0px);
+}
+
+.anim-left {
+	transform: translateX(30px);
+}
+
+.anim-left.anim-active {
+	transform: translateX(0px);
+}
+
 /* Special Animation */
 .anim-title {
 	opacity: 0;

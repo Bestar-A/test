@@ -60,6 +60,19 @@ button {
 	font-size: 12px;
 }
 
+.service-section {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.service-title {
+	font-size: 20px;
+}
+
+.service-subtitle {
+	font-size: 12px;
+}
+
 @media (min-width: 576px) {
 	.main-title {
 		font-size: 36px;
@@ -78,6 +91,19 @@ button {
 		margin: 0px 50px;
 		flex-direction: column;
 		font-size: 16px;
+	}
+
+	.service-section {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	.service-title {
+		font-size: 24px;
+	}
+
+	.service-subtitle {
+		font-size: 14px;
 	}
 }
 
@@ -98,6 +124,19 @@ button {
 	.login-dlg input {
 		font-size: 18px;
 	}
+
+	.service-section {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+
+	.service-title {
+		font-size: 28px;
+	}
+
+	.service-subtitle {
+		font-size: 18px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -112,6 +151,19 @@ button {
 		margin: 0px 100px;
 		flex-direction: row;
 	}
+
+	.service-section {
+		margin-left: 75px;
+		margin-right: 75px;
+	}
+
+	.service-title {
+		font-size: 32px;
+	}
+
+	.service-subtitle {
+		font-size: 20px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -119,6 +171,19 @@ button {
 		padding: 32px 50px 28px;
 		margin: 0px 120px;
 		flex-direction: row;
+	}
+
+	.service-section {
+		margin-left: 105px;
+		margin-right: 105px;
+	}
+
+	.service-title {
+		font-size: 36px;
+	}
+
+	.service-subtitle {
+		font-size: 22px;
 	}
 }
 

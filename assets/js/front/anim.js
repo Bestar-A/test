@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				}
 			});
 		},
-		{ root: null, rootMargin: "0px", threshold: 0.2 }
+		{ root: null, rootMargin: "0px", threshold: 0.5 }
 	);
 
 	Array.from(animScrollOpacities).forEach((elem) => {
