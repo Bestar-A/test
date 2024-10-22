@@ -5,11 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../../assets/css/style.css" />
 		<link rel="stylesheet" href="../../assets/css/custom.css" />
+		<link rel="stylesheet" href="../../assets/css/front-anim.css" />
 		<link rel="stylesheet" href="../../assets/fontawesome/css/all.min.css" />
 		<title>Panel 3</title>
 	</head>
 	<body class="bg-secondary">
-		<nav class="navbar navbar-expand-lg ps-4 ps-lg-l ps-xl-l ps-xxl-l pe-3 pe-xl-6 pe-lg-6 pe-xxl-6 py-5">
+		<nav class="navbar navbar-expand-lg ps-4 ps-lg-l ps-xl-l ps-xxl-l pe-3 pe-xl-6 pe-lg-6 pe-xxl-6 py-5 anim-trigger-scroll anim-opacity anim">
 			<a class="navbar-brand d-flex align-items-center cursor-pointer gap-s" href="#">
 				<h4 class="fw-bolder">logo</h4>
 				<i class="fa-solid fa-globe p-sm py-0 fs-2"></i>
@@ -34,10 +35,12 @@
 		</nav>
 		<main>
 			<section id="title" class="mx-auto text-center my-2 my-md-4 my-lg-x my-xl-x my-xxl-x" style="max-width: 550px">
-				<h1 class="main-title mb-4 mb-lg-l mb-xl-l mb-xxl-l mx-5 mx-lg-0 mx-xl-0 mx-xxl-0 lh-1">The Next-Gen SMM Panels</h1>
-				<h6 class="main-subtitle mx-4 fw-bolder lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h6>
+				<h1 class="main-title mb-4 mb-lg-l mb-xl-l mb-xxl-l mx-5 mx-lg-0 mx-xl-0 mx-xxl-0 lh-1 anim anim-title anim-trigger-scroll">The Next-Gen SMM Panels</h1>
+				<h6 class="main-subtitle mx-4 fw-bolder lh-base anim-trigger-scroll anim-lg anim-opacity anim-delay-lg">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+				</h6>
 			</section>
-			<section id="login" class="login-dlg bg-white rounded-3 d-flex flex-column gap-1">
+			<section id="login" class="login-dlg bg-white rounded-3 d-flex flex-column gap-1 anim-xl anim-opacity anim-trigger-scroll anim-delay-xl">
 				<div class="row gy-2">
 					<div class="form-icon-group col-12 col-lg-4">
 						<input type="text" class="form-control form-control-lg" />
@@ -405,5 +408,6 @@
 		</footer> -->
 		<script src="../../assets/js/popper.js"></script>
 		<script src="../../assets/js/bootstrap.min.js"></script>
+		<script src="../../assets/js/front/anim.js"></script>
 	</body>
 </html>

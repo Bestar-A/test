@@ -1,0 +1,100 @@
+.anim-sm {
+	transition: all 0.2s ease-in-out;
+}
+
+.anim-md,
+.anim {
+	transition: all 0.3s ease-in-out;
+}
+
+.anim-lg {
+	transition: all 0.5s ease-in-out;
+}
+
+.anim-xl {
+	transition: all 0.8s ease-in-out;
+}
+
+.anim-delay-sm {
+	transition-delay: 0.3s;
+}
+
+.anim-delay-md,
+.anim-delay {
+	transition-delay: 0.5s;
+}
+
+.anim-delay-lg {
+	transition-delay: 0.8s;
+}
+
+.anim-delay-xl {
+	transition-delay: 1s;
+}
+
+.anim-delay-xxl {
+	transition-delay: 1.3s;
+}
+
+.anim-opacity {
+	opacity: 0;
+}
+
+.anim-opacity.anim-active {
+	opacity: 1;
+}
+
+.anim-up {
+	transform: translateY(30px);
+}
+
+.anim-up.anim-active {
+	transform: translateY(0px);
+}
+
+/* Special Animation */
+.anim-title {
+	opacity: 0;
+}
+
+@keyframes title {
+	0% {
+		transform: translateY(60px);
+		transform: scale(0.6);
+		opacity: 0;
+	}
+	25% {
+		transform: translateY(10px);
+		transform: scale(1.4);
+		opacity: 0.3;
+	}
+	50% {
+		transform: translateY(-10px);
+		transform: scale(0.8);
+		opacity: 0.6;
+	}
+	70% {
+		transform: translateY(5px);
+		transform: scale(1.2);
+		opacity: 0.84;
+	}
+	86% {
+		transform: translateY(-5px);
+		transform: scale(0.96);
+		opacity: 0.95;
+	}
+	94% {
+		transform: translateY(0);
+		transform: scale(1.02);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.anim-title.anim-active {
+	animation: title 0.8s linear 0.2s both;
+}
