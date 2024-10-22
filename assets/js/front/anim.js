@@ -32,7 +32,7 @@ const sliderAnimation = () => {
 
 				sliderList.style.transform = `translateX(-${sliderAmount * curSlider}px)`;
 			}
-			curSlider = (curSlider + 1) % sliderList.children.length;
+			curSlider = (curSlider + 1) % (sliderList.children.length - 1);
 		}
 		console.log(curSlider);
 
