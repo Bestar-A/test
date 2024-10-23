@@ -191,6 +191,17 @@ a {
 	transform: rotate(45deg);
 }
 
+.details-card {
+	background: white;
+	cursor: pointer;
+}
+
+.details-card:hover {
+	background-color: #ff6060;
+	transition: all 0.6s ease-in-out;
+	color: white;
+}
+
 @media (min-width: 576px) {
 	.main-title {
 		font-size: 36px;
